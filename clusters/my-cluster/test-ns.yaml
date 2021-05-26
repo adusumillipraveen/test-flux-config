@@ -1,0 +1,9 @@
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    app.kubernetes.io/instance: test-system
+    app.kubernetes.io/part-of: test
+    app.kubernetes.io/version: v0.13.4
+  name: test-ns

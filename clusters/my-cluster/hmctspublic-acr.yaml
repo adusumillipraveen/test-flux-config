@@ -4,5 +4,5 @@ metadata:
   name: hmctspublic
   namespace: rpe
 spec:
-  image: hmctspublic.azureacr.io
+  image: hmctspublic.azurecr.io/rpe/service-auth-provider
   interval: 1m0s

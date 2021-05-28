@@ -5,6 +5,6 @@ metadata:
   namespace: rpe
 spec:
   type: slack
-  channel: test-notifications
+  channel: test-notifications #ignored
   secretRef:
     name: slack-url

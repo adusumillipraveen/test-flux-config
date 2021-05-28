@@ -16,6 +16,5 @@ spec:
   values:
     java:
       replicas: 2
-      image: test
     global:
       environment: aat

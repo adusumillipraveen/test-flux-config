@@ -1,0 +1,14 @@
+apiVersion: image.toolkit.fluxcd.io/v1alpha2
+kind: ImagePolicy
+metadata:
+  name: service-auth-provider
+  namespace: rpe
+spec:
+  filterTags:
+    pattern: '^prod+-(?P<ts>[0-9a-z]*)'
+    extract: '$ts'
+  policy:
+    numerical:
+      order: asc 
+  imageRepositoryRef:
+    name: service-auth-provider

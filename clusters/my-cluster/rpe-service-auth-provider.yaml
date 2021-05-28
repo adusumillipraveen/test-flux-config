@@ -14,7 +14,8 @@ spec:
         namespace: rpe
       interval: 1m
   values:
-    replicas: 2
-    image: test
+    java:
+      replicas: 2
+      image: test
     global:
       environment: aat

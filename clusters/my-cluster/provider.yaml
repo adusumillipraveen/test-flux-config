@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: slack
+  namespace: rpe
+spec:
+  type: slack
+  channel: test-notifications
+  secretRef:
+    name: slack-url

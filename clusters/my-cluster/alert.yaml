@@ -9,5 +9,19 @@ spec:
     name: slack
   eventSeverity: info
   eventSources:
-    - kind: *
+    - kind: GitRepository
+      namespace: rpe
+    - kind: Kustomization
+      namespace: rpe
+    - kind: HelmRelease
+      namespace: rpe
+    - kind: HelmChart
+      namespace: rpe
+    - kind: HelmRepository
+      namespace: rpe
+    - kind: ImageRepository
+      namespace: rpe
+    - kind: ImagePolicy
+      namespace: rpe
+    - kind: ImageUpdateAutomation
       namespace: rpe

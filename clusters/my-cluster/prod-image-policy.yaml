@@ -8,7 +8,7 @@ spec:
     pattern: '^prod+-(?P<ts>[0-9]*)'
     extract: '$ts'
   policy:
-    numerical:
+    alphabetical:
       order: asc 
   imageRepositoryRef:
     name: service-auth-provider

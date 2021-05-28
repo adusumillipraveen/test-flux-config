@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: rpe-service-auth-provider
+  name: service-auth-provider
   namespace: rpe
 spec:
   interval: 5m
@@ -16,5 +16,6 @@ spec:
   values:
     java:
       replicas: 1
+      image: hmctspublic.azurecr.io/rpe/service-auth-provider:prod-4c8f3f28 # {"$imagepolicy": "rpe:service-auth-provider"}
     global:
       environment: aat

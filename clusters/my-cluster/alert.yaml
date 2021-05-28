@@ -11,17 +11,25 @@ spec:
   eventSources:
     - kind: GitRepository
       namespace: rpe
+      name: '*'
     - kind: Kustomization
       namespace: rpe
+      name: '*'
     - kind: HelmRelease
       namespace: rpe
+      name: '*'
     - kind: HelmChart
       namespace: rpe
+      name: '*'
     - kind: HelmRepository
       namespace: rpe
+      name: '*'
     - kind: ImageRepository
       namespace: rpe
+      name: '*'
     - kind: ImagePolicy
       namespace: rpe
+      name: '*'
     - kind: ImageUpdateAutomation
       namespace: rpe
+      name: '*'

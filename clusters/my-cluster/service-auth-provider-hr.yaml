@@ -16,9 +16,9 @@ spec:
   values: 
     image:
       repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "rpe:service-auth-provider:name"}
-      tag: prod-4c8f3f28  # {"$imagepolicy": "rpe:service-auth-provider:tag"}
+      tag: pro-4c8f3f28-20210531235030  # {"$imagepolicy": "rpe:service-auth-provider:tag"}
     java:
       replicas: 1
-      image: hmctspublic.azurecr.io/rpe/service-auth-provider:prod-4c8f3f28 # {"$imagepolicy": "rpe:service-auth-provider"}
+      image: hmctspublic.azurecr.io/rpe/service-auth-provider:pro-4c8f3f28-20210531235030 # {"$imagepolicy": "rpe:service-auth-provider"}
     global:
       environment: aat

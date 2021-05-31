@@ -14,6 +14,7 @@ spec:
         namespace: rpe
       interval: 1m
   values:
+    image: hmctspublic.azurecr.io/rpe/service-auth-provider:prod-4c8f3f28 # {"$imagepolicy": "rpe:service-auth-provider"}
     java:
       replicas: 1
       image: hmctspublic.azurecr.io/rpe/service-auth-provider:prod-4c8f3f28 # {"$imagepolicy": "rpe:service-auth-provider"}

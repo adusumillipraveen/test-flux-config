@@ -5,7 +5,7 @@ metadata:
   namespace: rpe
 spec:
   filterTags:
-    pattern: '^prod+-(?P<ts>[0-9a-z]*)'
+    pattern: 'prod-(?P<ts>.*).+'
     extract: '$ts'
   policy:
     alphabetical:

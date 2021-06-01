@@ -10,8 +10,8 @@ spec:
       chart: ./stable/rpe-service-auth-provider
       sourceRef:
         kind: GitRepository
-        name: hmcts
-        namespace: rpe
+        name: hmcts-charts
+        namespace: flux-system
       interval: 1m
   values:
     image:

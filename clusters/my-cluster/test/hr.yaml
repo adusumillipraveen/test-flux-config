@@ -14,5 +14,5 @@ spec:
       interval: 1m
   values:
     image:
-      repository: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-      tag: 5.0.0  # {"$imagepolicy": "flux-system:podinfo:tag"}
+      repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "rpe:service-auth-provider:name"}
+      tag: pro-4c8f3f28-20210531235030  # {"$imagepolicy": "rpe:service-auth-provider:tag"}

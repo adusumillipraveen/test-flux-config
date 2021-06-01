@@ -13,12 +13,17 @@ spec:
         name: hmcts-charts
         namespace: flux-system
       interval: 1m
+#  valuesFrom:
+#    # Values file to merge in,
+#    # expected to be a relative path in the chart directory
+#    - chartFileRef:
+#        path: values-prod.yaml
   values:
     image:
       repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "flux-system:service-auth-provider:name"}
       tag: pro-4c8f3f28-20210531245030 # {"$imagepolicy": "flux-system:service-auth-provider:tag"}
     java:
       replicas: 1
-      image: hmctspublic.azurecr.io/rpe/service-auth-provider:pro-4c8f3f28-20210531245030 # {"$imagepolicy": "flux-system:service-auth-provider"}
+      image: hmctspublic.azurecr.io/rpe/service-auth-provider:pro-4c8f3f28-20210531225030 # {"$imagepolicy": "flux-system:service-auth-provider"}
     global:
       environment: aat

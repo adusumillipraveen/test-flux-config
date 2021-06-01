@@ -16,9 +16,9 @@ spec:
   values:
     image:
       repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "flux-system:podinfo:name"}
-      tag: 5.0.2 # {"$imagepolicy": "flux-system:podinfo:tag"}
+      tag: 5.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
     java:
       replicas: 1
-      image: hmctspublic.azurecr.io/rpe/service-auth-provider:5.0.2 # {"$imagepolicy": "flux-system:podinfo"}
+      image: hmctspublic.azurecr.io/rpe/service-auth-provider:5.0.0 # {"$imagepolicy": "flux-system:podinfo"}
     global:
       environment: aat

@@ -4,5 +4,5 @@ metadata:
   name: service-auth-provider
   namespace: rpe
 spec:
-  image: hmctspublic.azurecr.io/rpe/service-auth-provider
+  image: hmcts/service-auth-provider-app
   interval: 1m0s

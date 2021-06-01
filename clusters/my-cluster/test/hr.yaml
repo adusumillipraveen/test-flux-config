@@ -15,5 +15,5 @@ spec:
       interval: 1m
   values:
     image:
-      repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "rpe:service-auth-provider:name"}
-      tag: pro-4c8f3f28-20210531235030  # {"$imagepolicy": "rpe:service-auth-provider:tag"}
+      repository: hmcts/service-auth-provider-app # {"$imagepolicy": "rpe:service-auth-provider:name"}
+      tag: 5.0.0  # {"$imagepolicy": "rpe:service-auth-provider:tag"}

@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: hmctspublic.azurecr.io/rpe/service-auth-provider:5.0.0 # {"$imagepolicy": "rpe:service-auth-provider"}
+        image: hmcts/service-auth-provider-app:5.0.0 # {"$imagepolicy": "rpe:service-auth-provider"}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

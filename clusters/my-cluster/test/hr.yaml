@@ -15,5 +15,5 @@ spec:
       interval: 1m
   values:
     image:
-      repository: hmcts/service-auth-provider-app # {"$imagepolicy": "flux-system:service-auth-provider:name"}
-      tag: 5.0.0  # {"$imagepolicy": "flux-system:service-auth-provider:tag"}
+      repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "flux-system:service-auth-provider:name"}
+      tag: 5.0.2 # {"$imagepolicy": "flux-system:service-auth-provider:tag"}

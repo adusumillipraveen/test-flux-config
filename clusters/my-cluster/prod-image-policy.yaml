@@ -3,18 +3,18 @@ kind: ImagePolicy
 metadata:
   name: service-auth-provider
   namespace: flux-system
-#spec:
-#  filterTags:
-#    pattern: '^pro-[a-f0-9]+-(?P<ts>[0-9]+)'
-#    extract: '$ts'
-#  policy:
-#    alphabetical:
-#      order: asc 
-#  imageRepositoryRef:
-#    name: service-auth-provider
 spec:
+  filterTags:
+    pattern: '^pro-[a-f0-9]+-(?P<ts>[0-9]+)'
+    extract: '$ts'
+  policy:
+    alphabetical:
+      order: asc 
   imageRepositoryRef:
     name: service-auth-provider
-  policy:
-    semver:
-      range: 5.0.x
+#spec:
+#  imageRepositoryRef:
+#    name: service-auth-provider
+#  policy:
+#    semver:
+#      range: 5.0.x

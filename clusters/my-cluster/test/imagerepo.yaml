@@ -4,5 +4,5 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
-  image: hmcts/service-auth-provider-app
+  image: hmctspublic.azurecr.io/rpe/service-auth-provider
   interval: 1m0s

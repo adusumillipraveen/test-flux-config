@@ -15,10 +15,10 @@ spec:
       interval: 1m
   values:
     image:
-      repository: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-      tag: 5.0.3 # {"$imagepolicy": "flux-system:podinfo:tag"}
+      repository: hmcts/service-auth-provider-app # {"$imagepolicy": "flux-system:podinfo:name"}
+      tag: 5.0.2 # {"$imagepolicy": "flux-system:podinfo:tag"}
     java:
       replicas: 1
-      image: ghcr.io/stefanprodan/podinfo:5.0.3 # {"$imagepolicy": "flux-system:podinfo"}
+      image: hmcts/service-auth-provider-app:5.0.2 # {"$imagepolicy": "flux-system:podinfo"}
     global:
       environment: aat

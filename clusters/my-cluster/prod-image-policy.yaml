@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1alpha2
 kind: ImagePolicy
 metadata:
   name: service-auth-provider
-  namespace: rpe
+  namespace: flux-system
 #spec:
 #  filterTags:
 #    pattern: '^pro-[a-f0-9]+-(?P<ts>[0-9]+)'

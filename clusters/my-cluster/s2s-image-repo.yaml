@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1alpha2
 kind: ImageRepository
 metadata:
   name: service-auth-provider
-  namespace: rpe
+  namespace: flux-system
 spec:
-  image: hmcts/service-auth-provider-app
+  image: hmctspublic.azurecr.io/rpe/service-auth-provider
   interval: 1m0s

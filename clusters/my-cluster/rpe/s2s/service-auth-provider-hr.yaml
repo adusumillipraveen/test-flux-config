@@ -15,10 +15,10 @@ spec:
       interval: 1m
   values:
     image:
-      repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "rpe:podinfo:name"}
-      tag: 5.0.0 # {"$imagepolicy": "rpe:podinfo:tag"}
+      repository: hmctspublic.azurecr.io/rpe/service-auth-provider # {"$imagepolicy": "flux-system:service-auth-provider:name"}
+      tag: 5.0.0 # {"$imagepolicy": "flux-system:service-auth-provider:tag"}
     java:
       replicas: 1
-      image: hmctspublic.azurecr.io/rpe/service-auth-provider:5.0.0 # {"$imagepolicy": "rpe:podinfo"}
+      image: hmctspublic.azurecr.io/rpe/service-auth-provider:5.0.0 # {"$imagepolicy": "flux-system:service-auth-provider"}
     global:
       environment: aat

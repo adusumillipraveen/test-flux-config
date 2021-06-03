@@ -20,5 +20,5 @@ spec:
     push:
       branch: main
   update:
-    path: .
+    path: ./clusters/aat-00
     strategy: Setters

@@ -4,6 +4,7 @@ resources:
   - ../../../namespaces/flux-system/gotk-components.yaml
   - ../../../namespaces/flux-system/gotk-sync.yaml
   - ../../../namespaces/flux-system/hmcts-charts.yaml
+  - ../../../namespaces/flux-system/hmctspublic-charts.yaml
 patches:
   - patch: |-
       - op: add

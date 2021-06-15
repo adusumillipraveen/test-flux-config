@@ -7,13 +7,6 @@ resources:
 - ../../../namespaces/flux-system/image-automation.yaml
 - ../../../namespaces/flux-system/hmcts-charts.yaml
 - ../../../namespaces/flux-system/
-patches:
-- patch: |-
-    - op: add
-      path: /spec/path
-      value: ./clusters/cftptl  
-  target: 
-    group: kustomize.toolkit.fluxcd.io
-    version: v1beta1
-    kind: Kustomization
-    name: flux-system
+patchesStrategicMerge:
+  #flux patches
+  - ../../../namespaces/flux-system/cftptl/gotk-sync.yaml

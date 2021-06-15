@@ -3,6 +3,5 @@ kind: Namespace
 metadata:
   labels:
     app.kubernetes.io/instance: platops
-    app.kubernetes.io/part-of: platops
-    app.kubernetes.io/version: v0.13.4
+    environment: ${cluster_env:=dev}
   name: platops

@@ -19,7 +19,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./clusters/sbox-00
+  path: ./clusters/aat-00
   prune: true
   sourceRef:
     kind: GitRepository

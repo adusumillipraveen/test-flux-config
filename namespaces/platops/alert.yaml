@@ -2,34 +2,34 @@ apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Alert
 metadata:
   generation: 2
-  name: rpe-alerts
-  namespace: rpe
+  name: platops-alerts
+  namespace: platops
 spec:
   providerRef:
     name: slack
   eventSeverity: info
   eventSources:
     - kind: GitRepository
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: Kustomization
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: HelmRelease
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: HelmChart
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: HelmRepository
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: ImageRepository
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: ImagePolicy
-      namespace: rpe
+      namespace: platops
       name: '*'
     - kind: ImageUpdateAutomation
-      namespace: rpe
+      namespace: platops
       name: '*'

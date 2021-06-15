@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  labels:
-    app.kubernetes.io/instance: rpe
-    app.kubernetes.io/part-of: rpe
-    app.kubernetes.io/version: v0.13.4
-  name: rpe

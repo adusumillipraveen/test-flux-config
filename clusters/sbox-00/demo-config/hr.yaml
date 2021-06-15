@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: hmcts
-        namespace: rpe
+        namespace: platops
       interval: 1m
   values:
     image:

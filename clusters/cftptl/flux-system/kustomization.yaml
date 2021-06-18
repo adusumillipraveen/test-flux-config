@@ -7,6 +7,8 @@ resources:
 - ../../../namespaces/flux-system/image-automation.yaml
 - ../../../namespaces/flux-system/hmcts-charts.yaml
 - ../../../namespaces/flux-system/
+- https://github.com/fluxcd/flux2/manifests/integrations/registry-credentials-sync/azure?ref=main
 patchesStrategicMerge:
   #flux patches
-  - ../../../namespaces/flux-system/cftptl/gotk-sync.yaml
+- ../../../namespaces/flux-system/cftptl/gotk-sync.yaml
+- ../../../namespaces/flux-system/cftptl/config-patches.yaml

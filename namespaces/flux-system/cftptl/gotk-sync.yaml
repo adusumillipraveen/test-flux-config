@@ -10,4 +10,4 @@ spec:
       cluster_env: "cftptl"
       ACR_NAME: hmctspublic
       KUBE_SECRET: hmctspublic-creds
-      SYNC_PERIOD: 3600
+      SYNC_PERIOD: "3600"

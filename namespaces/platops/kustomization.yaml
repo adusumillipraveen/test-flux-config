@@ -5,3 +5,4 @@ resources:
 - provider.yaml
 - ns.yaml
 - s2s/service-auth-provider.yaml
+
